@@ -5,7 +5,7 @@ FROM centos
 RUN yum -y update
 
 # Install Python and PIP
-RUN yum install -y epel-release
+RUN yum install -y epel-release net-tools
 RUN yum install -y python python-pip
 
 # Install Flask web framework
